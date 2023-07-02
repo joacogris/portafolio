@@ -2,9 +2,7 @@ from flask import Flask, app
 
 import os 
 
-app.config.from_mapping(
-        DATABASE_PORT=os.environ.get('FLASK_DATABASE_PORT')
-)
+
 def create_app():
     app = Flask(__name__)
 
